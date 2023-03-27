@@ -92,7 +92,7 @@
   }
 
   .navbar .menu li {
-    display: block;
+    display: none;
     text-align: center;
   }
 
