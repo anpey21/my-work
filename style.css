@@ -45,7 +45,7 @@
   color: var(--font-white);
   cursor: pointer;
   font-family: "quicksand", sans-serif, 300;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .navbar .menu li a:hover {
