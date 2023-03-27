@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --ff-primary: 'Poppins', sans-serif;
+  --ff-secondary: 'Roboto Slab', serif;
+
+  --fw-reg: 300;
+  --fw-bold: 700;
+  --fw-light: 200;
+
+  --accent-pink: #FD2155;
+  --accent-teal: #8cf7e7;
+  --accent-violet: #c397ec;
+  --accent-yellow: #E4EE89;
+  --accent-orange: #FFa500;
+  --dark-bg: #1d1d1d;
+  --font-white: whitesmoke;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "quicksand", sans-serif, 300;
+}
+
+nav ul li a:hover {
+  color: var(--accent-violet);
+  transition: .4s;
+}
+
+.logo {
+  color: var(--accent-teal);
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.logo-span {
+  color: #eb0abe;
+}
+
+.btn {
+  background-color:var(--accent-orange);
+  color: var(--font-white);
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: transform .4s;
+
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: var(--accent-yellow);
+  font-family: 'Lato', sans-serif;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 75px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+.content h3 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  color: var(--accent-teal);
+}
+
+.content h4 {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
