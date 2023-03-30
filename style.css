@@ -15,8 +15,8 @@ html {
   --ff-primary: 'Open Sans', 300, sans-serif;
   --ff-secondary: 'Poppins', 200, sans-serif;
   --accent-pink: #FD2155;
-  --accent-teal: #8cf7e7;
-  --accent-violet: #eb0abe;
+  --accent-teal: #75e9e5;
+  --accent-violet: #be26ff;
   --accent-yellow: #E4EE89;
   --accent-orange: #ffb509;
   --dark-bg: #111111;
@@ -83,7 +83,7 @@ h1 {
 }
 
 .logo-span {
-  color: #eb0abe;
+  color: var(--accent-violet);
 }
 
 .contact-btn {
@@ -113,7 +113,6 @@ h1 {
   text-align: center;
   margin-top: 18vh;
   color: var(--accent-orange);
-  font-family: 'monospace', sans-serif;
 }
 
 .hero-text {
