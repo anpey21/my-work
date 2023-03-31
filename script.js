@@ -1,12 +1,10 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const menu = document.getElementsByClassName('menu')[0]
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
+// Code to begin with the menu hidden and open it when the button is clicked
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
+
+
+toggleButton.addEventListener('click', () => {
+  menu.classList.toggle('active')
 })

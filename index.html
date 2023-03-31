@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Anna Peysikova  |  Web Developer</title>
             <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
             <link href="https://fonts..com/css?family=Poppins:200,300,400,700|Quicksand:400,700&display=swap" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +24,17 @@
       <div class="hero">
         <nav class="navbar">
           <h1 class="logo">ANNA <span class="logo-span">PEYSIKOVA</span></h1>
-          <a href="#" class="toggle-button">
+          <button class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-          </a>
-          <ul class="menu">
+          </button>
+          <ul class="menu active">
             <li><a href="projects.html">Portfolio</a></li>
             <li><a href="images/anna_resume.pdf">Resume</a></li>
             <li><a href="#scrollabout">About</a></li>
             <li><a href="#">Home</a></li>
-            <li>><a href="mailto:anpey21@gmail.com" class="contact-btn">Contact Me</a></li>
+            <li>><a href="mailto:anpey21@gmail.com" class="contact-btn">Contact</a></li>
           </ul>
         </nav>
         <div class="hero-content">
@@ -40,24 +43,45 @@
             <a href="projects.html" class="impact-btn" id="portfolio-btn">Portfolio</a>
         </div>
       </div>
-      <div class="about">
-        <div class ="skills-header">Who <span class="about-header-span">I Am</span></div>
-            <p class="about-content">
-              After seventeen years in the restaurant industry, I have successfully made the transition to full time web development.
-              I am a self-taught developer with a passion for UI design and a strong desire to learn new technologies. I am a graduate of
-              LeWagon's full stack bootcamp and am currently looking for exciting new opportunities in tech.
-            </p>
-        </div>
-      </div>
+
       <div class="skills">
-        <div class="skills-header">Programming <span class="about-header-span">Skills</span></div>
+        <div class="skills-header">Valuable <span class="about-header-span">Skills</span></div>
         <div class="icon-row">
-          <img src= "images/reactlogo.png" alt="react logo">
-          <img src="images/htmlcssjs.png" alt="html logo">
-          <img src="images/rubylogo.png.jpg" alt="ruby logo">
-          <img src="images/github.png" alt="github logo">
+          <div class="icon-col">
+            <img src= "images/reactlogo.png" alt="react logo">
+            <small>React JS</small>
+          </div>
+          <div class="icon-col">
+            <img src="images/htmlcssjs.png" alt="html logo">
+            <small>HTML, CSS, JS</small>
+          </div>
+          <div class="icon-col">
+            <img src="images/rubylogo.png.jpg" alt="ruby logo">
+            <small>Ruby on Rails</small>
+          </div>
+          <div class="icon-col">
+            <img src="images/github.png" alt="github logo">
+            <small>Git and Github</small>
+          </div>
         </div>
       </div>
-      <script src="script.js"></script>
-    </body>
+      <div class="about">
+        <div class ="skills-header who-i-am">Who <span class="who-span">I Am</span></div>
+          <p class="about-content" id="scrollabout">
+            I am a <strong>passionate and determined </strong>junior developer with expertise in React.JS, Python, and Ruby on Rails.
+             I am thrilled to be making the career jump from hospitality management into full time web development and taking on new challenges in the field!
+          </p>
+        </div>
+        <div class="footer">
+          <div class="socials-row">
+            <a href="https://www.linkedin.com/in/annapeysikova" target="_blank"><img src="images/linkedin.png" alt="linkedin logo" width="30px"></a>
+            <a href="https://www.github.com/anpey21" target="_blank"><img src="images/github.png" alt="github logo" width="30px"></a>
+            <a href="mailto:anpey21@gmail.com"><img src="images/mail.png" alt="mail logo" width="30px"></a>
+          </div>
+          <p>© 2021 Anna Peysikova</p>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
 </html>
