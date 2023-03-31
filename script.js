@@ -8,3 +8,15 @@ const menu = document.getElementsByClassName('menu')[0]
 toggleButton.addEventListener('click', () => {
   menu.classList.toggle('active')
 })
+
+// How to close the menu when a link is clicked
+
+const menuLinks = document.querySelectorAll('.menu a')
+menuLinks.forEach(
+  function(menuLink) {
+    menuLink.addEventListener('click', () => {
+      menu.classList.remove('active')
+    })
+  }
+)
+

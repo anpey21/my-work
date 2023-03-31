@@ -301,6 +301,10 @@ small {
     font-size: 8vw;
   }
 
+  .about {
+    background-position: center bottom;
+  }
+
   .hero {
     height: 100vh;
   }
