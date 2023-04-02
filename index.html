@@ -2,6 +2,7 @@
   <html lang="en">
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
       <meta charset="UTF-8">
+      <meta name="title" content="Anna Peysikova | Web Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Anna Peysikova  |  Web Developer</title>
             <link rel="icon" type="image/x-icon" href="img/favicon.ico">
@@ -16,26 +17,31 @@
             <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <div class="hero">
         <nav class="navbar">
+          <label class="toggle-button">
+            <input type="checkbox">
+          </label>
           <h1 class="logo">ANNA <span class="logo-span">PEYSIKOVA</span></h1>
-          <button class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-          <ul class="menu active">
+          <ul class="menu">
             <li><a href="projects.html">Portfolio</a></li>
             <li><a href="images/anna_resume.pdf">Resume</a></li>
             <li><a href="#scrollabout">About</a></li>
-            <li>><a href="mailto:anpey21@gmail.com" class="contact-btn">Contact</a></li>
+            <li><a href="mailto:anpey21@gmail.com" class="contact-btn">Contact</a></li>
           </ul>
         </nav>
+        <div class="sidebar">
+          <a href=""></a>
+          <a href=""></a>
+          <a href="projects.html">Portfolio</a>
+          <a href="images/anna_resume.pdf">Resume</a>
+          <a href="#scrollabout">About</a>
+        </div>
         <div class="hero-content">
           <h2 class="hero-text">You found me!</h2>
           <h3>I'm a front end <span class="purple">developer</span> with a passion for UI design</h3>
@@ -44,45 +50,47 @@
             <a href="mailto:anpey21@gmail.com" class="impact-btn" id="portfolio-btn">Get in Touch</a>
         </div>
       </div>
-
+      <div class="about">
+        <div class ="skills-header who-i-am" id="scrollabout">Who <span class="who-span">I Am</span></div>
+          <div class="about-content">
+            <p>
+              I'm Anna, a freelance web developer with expertise in React.JS, Python, and Ruby on Rails.
+            I am thrilled to be making the career jump from hospitality management into full time web development and taking on new challenges in the field!
+            </p>
+          </div>
+        </div>
       <div class="skills">
-        <div class="skills-header">Valuable <span class="about-header-span">Skills</span></div>
-        <div class="icon-row">
-          <div class="icon-col">
-            <img src= "images/reactlogo.png" alt="react logo">
-            <small>React JS</small>
-          </div>
-          <div class="icon-col">
-            <img src="images/htmlcssjs.png" alt="html logo">
-            <small class="html-css-js">HTML, CSS, JS</small>
-          </div>
-          <div class="icon-col">
-            <img src="images/rubylogo.png.jpg" alt="ruby logo">
-            <small>Ruby on Rails</small>
-          </div>
-          <div class="icon-col">
-            <img src="images/github.png" alt="github logo">
-            <small>Git and Github</small>
-          </div>
+        <div class="skills-header">Programming <span class="about-header-span">Skills</span></div>
+      <div class="icon-row">
+        <div class="icon-col">
+          <img src= "images/reactlogo.png" alt="react logo">
+          <small>React JS</small>
+        </div>
+        <div class="icon-col">
+          <img src="images/htmlcssjs.png" alt="html logo">
+          <small class="html-css-js">HTML, CSS, JS</small>
+        </div>
+        <div class="icon-col">
+          <img src="images/rubylogo.png.jpg" alt="ruby logo">
+          <small>Ruby on Rails</small>
+        </div>
+        <div class="icon-col">
+          <img src="images/github.png" alt="github logo">
+          <small>Git and Github</small>
         </div>
       </div>
-      <div class="about">
-        <div class ="skills-header who-i-am">Who <span class="who-span">I Am</span></div>
-          <p class="about-content" id="scrollabout">
-            I'm Anna, a freelance web developer with expertise in React.JS, Python, and Ruby on Rails.
-            I am thrilled to be making the career jump from hospitality management into full time web development and taking on new challenges in the field!
-          </p>
-        </div>
+      </div>
+
         <div class="footer">
           <div class="socials-row">
             <a href="https://www.linkedin.com/in/annapeysikova" target="_blank"><img src="images/linkedin.png" alt="linkedin logo" width="30px"></a>
             <a href="https://www.github.com/anpey21" target="_blank"><img src="images/github.png" alt="github logo" width="30px"></a>
             <a href="mailto:anpey21@gmail.com"><img src="images/mail.png" alt="mail logo" width="30px"></a>
           </div>
-          <p>© 2021 Anna Peysikova</p>
+            <p>© 2021 Anna Peysikova</p>
+          </div>
         </div>
       </div>
-    </div>
-  <script src="script.js"></script>
-</body>
-</html>
+      <script src="script.js"></script>
+    </body>
+  </html>
