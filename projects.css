@@ -29,10 +29,11 @@ html {
 
 a {
   line-height: 1.5;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   color: var(--accent-teal);
-  padding: 5px;
+  padding: 15px;
+  margin-top: 15px;
 }
 
 .projects-header {
@@ -43,9 +44,11 @@ a {
   color: var(--accent-teal);
   margin-top: 18vh;
   margin-bottom: 8vh;
+  font-family: "Abril Fatface", cursive;
 }
 
 .projects-header span {
+  font-family: "Abril Fatface", cursive;
   color: var(--accent-violet)
 }
 
@@ -62,13 +65,21 @@ a {
   border-radius: 5px;
   padding: 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 80%;
+  height: 60vh;
 }
 
-.movie-card img {
+.movie-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-card iframe {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
 }
+
 
 .footer {
   background: #F4F4F4;

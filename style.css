@@ -8,6 +8,7 @@
 
   body {
     margin: 0 auto;
+    padding: 0;
   }
 
 html {
@@ -99,7 +100,6 @@ html {
   font-size: 1.2em;
   font-weight: 300;
   color: var(--font-white);
-  font-family: monospace;
   text-align: center;
 }
 
@@ -129,7 +129,6 @@ html {
 
 .menu li a {
   color: var(--font-white);
-  font-family: monospace;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -142,7 +141,6 @@ h1 {
   color: var(--accent-teal);
   font-size: 2.5rem;
   font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -183,27 +181,27 @@ color: var(--accent-violet);
 .hero-content {
   display: flex;
   flex-direction: column;
-  justify-content: left;
   align-items: left;
-  text-align: left;
+  margin-top: -150px;
+
 }
 
 .hero-text {
   color: var(--font-white);
   text-align: left;
-  margin-left: 40px;
-  font-family: monospace;
-  font-size: 3.5em;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 6em;
   font-weight: 300;
   letter-spacing: 2px;
+  margin: 0;
+  margin-left: 100px;
 }
 .hero-content h3 {
   font-size: 1.5em;
-  margin-left: 40px;
   font-style: italic;
   font-weight: 200;
-  font-family: 'Lato';
   color: var(--accent-teal);
+  margin-left: 100px;
 }
 
 .purple {
@@ -211,24 +209,19 @@ color: var(--accent-violet);
 }
 
 .impact-btn {
-  margin-left: 40px;
+  margin-left: 100px;
   margin-bottom: 12px;
+  margin-top: 6vh;
   font-size: 1.5rem;
   text-align: center;
   border: 1px solid var(--accent-orange);
   font-weight: 300;
   letter-spacing: 2px;
-  font-family: monospace, sans-serif;
   background: transparent;
   padding: 10px 25px;
   max-width: 30%;
   color: var(--accent-violet);
   border-radius: 30px;
-}
-
-.resume-btn {
-  padding: 10px 100px;
-  display: none;
 }
 
 .impact-btn:hover {
@@ -270,13 +263,13 @@ color: var(--accent-violet);
 
 .who-span {
   color: var(--accent-teal);
-  font-family: monospace;
+  font-family: "Abril Fatface", cursive;
 }
 
 
 .about-header-span {
   color: var(--accent-teal);
-  font-family: monospace;
+  font-family: "Abril Fatface", cursive;
 }
 
 
@@ -297,7 +290,7 @@ color: var(--accent-violet);
   font-weight: 400;
   letter-spacing: 2px;
   color: var(--accent-violet);
-  font-family: monospace;
+  font-family: "Abril Fatface", cursive;
 }
 
 .icon-row {
