@@ -2,13 +2,13 @@
   *::after,
   *::before {
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
   }
 
   body {
     margin: 0 auto;
     padding: 0;
+    font-family: 'Lato', sans-serif;
   }
 
 html {
@@ -128,8 +128,7 @@ html {
 }
 
 .menu li a {
-  color: var(--font-white);
-  font-size: 1.2rem;
+  color: var(--font-white);;
   cursor: pointer;
 }
 
@@ -138,22 +137,23 @@ html {
 }
 
 h1 {
-  color: var(--accent-teal);
+  color: var(--accent-violet);
   font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: 2px;
+  padding-left: 12px;
 }
 
 .logo-span {
-  color: var(--accent-violet);
+  color: var(--accent-teal);
 }
 
 .contact-btn {
   background-color:var(--accent-orange);
   color: white;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   padding: 10px 30px;
-  border-radius: 30px;
+  border-radius: 5px;
   transition: transform .4s;
 
 }
@@ -181,27 +181,23 @@ color: var(--accent-violet);
 .hero-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: left;
-  margin-top: -150px;
-
+  margin: -150px 0 0 0;
+  padding-left: 5%;
 }
 
 .hero-text {
   color: var(--font-white);
-  text-align: left;
+  font-weight: 300;
   font-family: 'Abril Fatface', cursive;
   font-size: 6em;
-  font-weight: 300;
   letter-spacing: 2px;
-  margin: 0;
-  margin-left: 100px;
+  margin-bottom: 5px;
 }
 .hero-content h3 {
-  font-size: 1.5em;
-  font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
   color: var(--accent-teal);
-  margin-left: 100px;
 }
 
 .purple {
@@ -209,9 +205,7 @@ color: var(--accent-violet);
 }
 
 .impact-btn {
-  margin-left: 100px;
-  margin-bottom: 12px;
-  margin-top: 6vh;
+  margin-top:10vh;
   font-size: 1.5rem;
   text-align: center;
   border: 1px solid var(--accent-orange);
@@ -221,7 +215,7 @@ color: var(--accent-violet);
   padding: 10px 25px;
   max-width: 30%;
   color: var(--accent-violet);
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .impact-btn:hover {
@@ -320,7 +314,6 @@ color: var(--accent-violet);
 small {
   color: var(--font-white);
   text-align: center;
-  font-family: monospace, sans-serif;
 }
 
 .html-css-js {
@@ -361,7 +354,6 @@ small {
 /* Media Queries: */
 
 
-
 @media only screen and (max-width: 425px) {
   .skills-header {
     font-size: 1.8em;
@@ -369,16 +361,16 @@ small {
   }
 
   .about-content {
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
   }
 
   .logo {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .impact-btn {
-    min-width: 60%;
+    min-width: 70%;
+    font-size: 2vw;
   }
 
   .sidebar {
@@ -392,11 +384,26 @@ small {
   }
 
   .hero {
-    height: 100vh;
+    height: 80vh;
+  }
+
+  .hero-text {
+    font-size: 3em;
+  }
+
+  .hero-content h3 {
+    font-size: 1.5em;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+    justify-content: flex-start;
   }
 
  .about {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
  }
 
@@ -421,10 +428,6 @@ small {
   translate: 0;
 }
 
-.impact-btn {
-  min-width: 60%;
-}
-
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -432,12 +435,8 @@ small {
     margin: 0;
   }
 
-  .logo {
-    padding-left: 10px;
-  }
   .contact-btn {
     color: var(--accent-teal);
-    font-family: 'Lato', sans-serif;
     cursor: pointer;
     border: none;
     background: none;
@@ -451,6 +450,7 @@ small {
 
   .impact-btn {
     font-size: 1.2em;
+    min-width: 50%;
   }
 
   .menu {
