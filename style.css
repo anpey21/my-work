@@ -198,7 +198,8 @@ color: var(--accent-violet);
   margin-bottom: 5px;
 }
 .hero-content h3 {
-  font-weight: 300;
+  font-family: var(--secondary-font);
+  font-weight: lighter;
   font-style: italic;
   color: var(--accent-teal);
 }
