@@ -8,7 +8,7 @@
   body {
     margin: 0 auto;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
 html {
@@ -26,9 +26,11 @@ html {
   --accent-orange: #ffb509;
   --dark-bg: #111111;
   --font-white: whitesmoke;
-  --hamburger-margin: 5vh;
+  --hamburger-margin: 3vh;
   --animation-timing: .2s ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 2 + var(--hamburger-gap)* 2);
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Fira Code', monospace;
 }
 
 
@@ -128,7 +130,8 @@ html {
 }
 
 .menu li a {
-  color: var(--font-white);;
+  color: var(--font-white);
+  font-family: var(--secondary-font);
   cursor: pointer;
 }
 
@@ -140,6 +143,7 @@ h1 {
   color: var(--accent-violet);
   font-size: 2.5rem;
   font-weight: 300;
+  font-family: var(--secondary-font);
   letter-spacing: 2px;
   padding-left: 12px;
 }
@@ -189,14 +193,13 @@ color: var(--accent-violet);
 
 .hero-text {
   color: var(--font-white);
-  font-weight: 300;
-  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
   font-size: 6em;
-  letter-spacing: 2px;
   margin-bottom: 5px;
 }
 .hero-content h3 {
   font-weight: 300;
+  font-style: italic;
   color: var(--accent-teal);
 }
 
@@ -209,7 +212,7 @@ color: var(--accent-violet);
   font-size: 1.5rem;
   text-align: center;
   border: 1px solid var(--accent-orange);
-  font-weight: 300;
+  font-family: var(--secondary-font);
   letter-spacing: 2px;
   background: transparent;
   padding: 10px 25px;
@@ -245,8 +248,6 @@ color: var(--accent-violet);
   min-width: 50%;
   max-width:80%;
   text-align: center;
-  font-weight: 300;
-  font-size: 1.2em;
   color: var(--font-white);
 }
 
@@ -257,13 +258,13 @@ color: var(--accent-violet);
 
 .who-span {
   color: var(--accent-teal);
-  font-family: "Abril Fatface", cursive;
+  font-weight: 700;
 }
 
 
 .about-header-span {
   color: var(--accent-teal);
-  font-family: "Abril Fatface", cursive;
+  font-weight: 700;
 }
 
 
@@ -280,11 +281,9 @@ color: var(--accent-violet);
   margin-bottom: 0;
   padding: 12px 35px;
   font-size: 2.5em;
-  font-weight: bold;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 2px;
   color: var(--accent-violet);
-  font-family: "Abril Fatface", cursive;
 }
 
 .icon-row {
@@ -314,6 +313,7 @@ color: var(--accent-violet);
 small {
   color: var(--font-white);
   text-align: center;
+  font-family: var(--secondary-font);
 }
 
 .html-css-js {
@@ -332,7 +332,7 @@ small {
   padding: 50px 10px 10px 10px;
   align-items: center;
   color: var(--accent-orange);
-  font-family: 'Lato', sans-serif;
+  font-family: var(--secondary-font);
   text-align: center;
 }
 
@@ -345,7 +345,7 @@ small {
 }
 
 .footer p {
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 300;
   color: var(--font-white);
 }
@@ -355,22 +355,13 @@ small {
 
 
 @media only screen and (max-width: 425px) {
-  .skills-header {
-    font-size: 1.8em;
+  /* .skills-header {
+    font-size: 1.5em;
     margin-top: 10px;
-  }
-
-  .about-content {
-    width: 100%;
-  }
+  } */
 
   .logo {
     font-size: 7vw;
-  }
-
-  .impact-btn {
-    min-width: 70%;
-    font-size: 2vw;
   }
 
   .sidebar {
@@ -379,12 +370,8 @@ small {
     position: absolute;
   }
 
-  .about {
-    background-position: center bottom;
-  }
-
   .hero {
-    height: 80vh;
+    height: 100vh;
   }
 
   .hero-text {
@@ -450,7 +437,7 @@ small {
 
   .impact-btn {
     font-size: 1.2em;
-    min-width: 50%;
+    min-width: 80%;
   }
 
   .menu {
@@ -458,23 +445,24 @@ small {
   }
 
   .skills-header {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
+.about {
+  height: 100vh;
+}
+
   .about-content {
-    background-image: none;
-    font-size: 1.2em;
+    font-size: 2.5vw;
     margin: 0;
     max-width: 80%;
     padding: 5px;
+    margin-top: 3vh;
   }
 
   .hero-text {
-    font-size: 2em;
+    font-size: 3em;
 
-  }
-  .about-content {
-    margin-top: 6vh;
   }
 
   .hero-content {
@@ -488,17 +476,6 @@ small {
     flex-basis: 50%;
     text-align: center;
     padding: 10px;
-  }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  .skills-header {
-    font-size: 2.5em;
-  }
-
-  .hero-text {
-    font-size:3em;
   }
 }
 

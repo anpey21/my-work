@@ -5,6 +5,7 @@ html {
 :root {
   --ff-primary: 'Open Sans', sans-serif;
   --ff-headers: 'Abril Fatface', cursive;
+  --secondary-font: 'Fira Code', monospace;
   --accent-pink: #FD2155;
   --accent-teal: #75e9e5;
   --accent-violet: #be26ff;
@@ -27,8 +28,9 @@ body {
 a {
   position: relative;
   top: 20px;
+  font-size: 1.2em;
   font-weight: bolder;
-  font-family: var(--ff-primary);
+  font-family: var(--secondary-font);
   color: var(--accent-teal);
   padding: 10px 20px;
   margin: 10px;
@@ -41,14 +43,18 @@ a:hover {
 }
 
 .projects-header {
-  font-family: var(--ff-headers);
-  color: var(--font-white);
+  font-family: var(--ff-primary);
+  color: var(--accent-violet);
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 200;
+  font-weight: 700;
   letter-spacing: 2px;
   margin-top: 15vh;
   padding-bottom: 20vh;
+}
+
+.projects-header span {
+  color: var(--accent-teal);
 }
 
 .movie-container {
@@ -107,10 +113,10 @@ img {
 
 .movie-description h1 {
   font-size: 2.5vw;
-  font-family: var(--ff-headers);
+  font-family: var(--ff-primary);
   margin-bottom: 10px;
   color: var(--font-white);
-  font-weight: lighter;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 
@@ -139,7 +145,7 @@ img {
 .view-code {
   text-align: left;
   font-weight: bold;
-  font-family: monospace;
+  font-family: var(--secondary-font);
   padding: 0;
   letter-spacing: 2px;
   background: transparent;
@@ -155,7 +161,7 @@ img {
 .visit-site {
   text-align: left;
   font-weight: bold;
-  font-family: monospace;
+  font-family: var(--secondary-font);
   padding: 0;
   letter-spacing: 2px;
   background: transparent;
@@ -171,7 +177,7 @@ img {
 /* Footer Section */
 
 .footer {
-    font-family: monospace;
+    font-family: var(--secondary-font);
     background-color: var(--dark-bg);
     font-weight: bolder;
     display: flex;
@@ -218,19 +224,6 @@ img {
   .movie-description h1 {
     font-size: 3.5vw;
   }
-
-  .movie-description p {
-    font-size: 1.5vw;
-  }
-
-  .movie-description ul {
-    font-size: 1.5vw;
-    padding-bottom:0;
-  }
-
-  .movie-description li {
-    font-size: 1.5vw;
-  }
   .movie-card {
     width: 70%;
   }
@@ -261,11 +254,11 @@ img {
   }
 
   .movie-description h1 {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
-  .movie-description p, ul, li {
-    font-size: 1.5vw;
+  .movie-description p {
+    font-size: 2.5vw;
   }
 
 
@@ -296,15 +289,11 @@ img {
   }
 
   .movie-description h1 {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .movie-description p {
-    font-size: 1.5vw;
-  }
-
-  .movie-description ul {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 
   .movie-description li {
