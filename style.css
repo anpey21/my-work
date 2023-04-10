@@ -249,6 +249,7 @@ color: var(--accent-violet);
   max-width:80%;
   text-align: center;
   color: var(--font-white);
+  padding-bottom: 25px;
 }
 
 .who-i-am {
@@ -258,13 +259,11 @@ color: var(--accent-violet);
 
 .who-span {
   color: var(--accent-teal);
-  font-weight: 700;
 }
 
 
 .about-header-span {
   color: var(--accent-teal);
-  font-weight: 700;
 }
 
 
@@ -281,7 +280,7 @@ color: var(--accent-violet);
   margin-bottom: 0;
   padding: 12px 35px;
   font-size: 2.5em;
-  font-weight: 700;
+  font-family: var(--secondary-font);
   letter-spacing: 2px;
   color: var(--accent-violet);
 }
