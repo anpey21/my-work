@@ -25,7 +25,7 @@ body {
   font-weight: 300;
 }
 
-a {
+.home-link {
   position: relative;
   top: 20px;
   font-size: 1.2em;
@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.home-link:hover {
   color: var(--accent-orange);
   transition: all 0.3s ease-in-out;
 }
@@ -142,31 +142,26 @@ img {
   margin-right: 10px;
 }
 
-.view-code {
+.view-code, .visit-site {
   text-align: left;
   font-weight: bold;
   font-family: var(--secondary-font);
-  padding: 0;
+  padding: 12px;
+  margin-bottom: 12px;
   letter-spacing: 2px;
   background: transparent;
   color: var(--accent-orange);
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  text-decoration: none;
 }
 
-.view-code:hover {
+.view-code:hover, .visit-site:hover {
   color: var(--accent-violet);
   transition: all 0.3s ease-in-out;
 }
 
 .visit-site {
-  text-align: left;
-  font-weight: bold;
-  font-family: var(--secondary-font);
-  padding: 0;
-  letter-spacing: 2px;
-  background: transparent;
   color: var(--accent-teal);
-  font-size: 1.5vw;
 }
 
 .visit-site:hover {
@@ -189,21 +184,22 @@ img {
 
 .socials-row {
   display: flex;
-  justify-content: left;
   align-items: flex-end;
   text-align: left;
-  margin-right: 5px;
 }
 
 .footer p {
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 300;
   color: var(--font-white);
-  padding-right: 20px;
+  padding-right: 0;
+  margin:2px;
+  margin-bottom: 12px;
 }
 
 .footer-img {
-  width:25px;
+  width: 25px;
+  padding: 12px;
 }
 
 /* media query for smallest mobile */
@@ -217,23 +213,28 @@ img {
   }
 
   .movie-description {
-    max-width: 60%;
+    max-width: 70%;
     line-height: 1.2em;
   }
 
-  .movie-description h1 {
-    font-size: 3.5vw;
+  .movie-description p {
+    font-size: 3vw;
   }
+
+  .movie-description h1 {
+    font-size: 4vw;
+  }
+
+  .movie-description li {
+    font-size: 1.8vw;
+  }
+
   .movie-card {
     width: 70%;
   }
 
   .movie-card iframe, img {
     max-height: 200px;
-  }
-
-  .footer p {
-    font-size: .5em;
   }
 
 }
@@ -249,18 +250,13 @@ img {
   }
 
   .movie-description {
-    max-width: 60%;
-    line-height: 1.2em;
+    max-width: 70%;
+    line-height: 1.5em;
   }
 
   .movie-description h1 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
-
-  .movie-description p {
-    font-size: 2.5vw;
-  }
-
 
   .movie-description li {
     margin-bottom: 12px;
@@ -292,11 +288,11 @@ img {
     font-size: 4vw;
   }
 
-  .movie-description p {
-    font-size: 2.5vw;
+  .movie-description li {
+    font-size: 2vw;
   }
 
-  .movie-description li {
-    font-size: 1.5vw;
+  .view-code, .visit-site {
+    font-size: 2vw;
   }
 }
