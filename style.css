@@ -87,27 +87,27 @@ html {
 /* Sidebar */
 
 .sidebar {
-  translate: -100%;
   background: var(--dark-bg);
   width: 100%;
-  height: 30vh;
+  height: 10vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.sidebar a {
+.nav-link {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 10px;
   margin: 0;
   font-size: 1.2em;
-  font-weight: 300;
+  font-family: var(--secondary-font);
   color: var(--font-white);
   text-align: center;
 }
 
 .sidebar a:hover {
-  background-color: var(--accent-violet);
-  color: var(--font-white);
+  color: var(--accent-teal);
 }
 
 /* Nav Bar */
@@ -188,7 +188,7 @@ color: var(--accent-violet);
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin: -150px 0 0 0;
+  margin-top:30px;
   padding-left: 5%;
 }
 
@@ -365,18 +365,12 @@ small {
     font-size: 7vw;
   }
 
-  .sidebar {
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-  }
-
   .hero {
-    height: 100vh;
+    height: 80vh;
   }
 
   .hero-text {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .hero-content h3 {
@@ -386,8 +380,11 @@ small {
   }
 
   .hero-content {
-    margin-top: 100px;
-    justify-content: flex-start;
+    /* center this on the mobile device screen */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
   }
 
  .about {
@@ -412,9 +409,23 @@ small {
     display: flex;
   }
 
-.toggle-button:has(input:checked) + .sidebar {
-  translate: 0;
+  .sidebar {
+    display: flex;
+  }
+
+.sidebar.active {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: .8em;
 }
+
+.nav-link {
+  flex-direction: column;
+  text-align: center;
+}
+
 
   .navbar {
     flex-direction: column;

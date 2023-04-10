@@ -16,8 +16,8 @@
     <body>
       <div class="hero">
         <nav class="navbar">
-          <label class="toggle-button">
-            <input type="checkbox">
+          <label class="toggle-button" for="sidebar-toggle">
+            <input type="checkbox" id="sidebar-toggle">
           </label>
           <h1 class="logo">ANNA <span class="logo-span">PEYSIKOVA</span></h1>
           <ul class="menu">
@@ -27,12 +27,10 @@
             <li><a href="mailto:anpey21@gmail.com" class="contact-btn">Contact</a></li>
           </ul>
         </nav>
-        <div class="sidebar">
-          <a href=""></a>
-          <a href=""></a>
-          <a href="projects.html">Portfolio</a>
-          <a href="images/anna_resume.pdf">Resume</a>
-          <a href="#scrollabout">About</a>
+        <div class="sidebar active">
+          <a href="projects.html" class="nav-link" >Portfolio</a>
+          <a href="images/anna_resume.pdf" class="nav-link">Resume</a>
+          <a href="#scrollabout" class="nav-link">About</a>
         </div>
         <div class="hero-content">
           <h2 class="hero-text">Hi, I'm Anna</h2>
