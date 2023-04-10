@@ -150,7 +150,6 @@ img {
   font-family: var(--secondary-font);
   padding: 12px;
   margin-bottom: 12px;
-  letter-spacing: 2px;
   background: transparent;
   color: var(--accent-orange);
   font-size: 1.2vw;
