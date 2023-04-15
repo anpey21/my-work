@@ -87,12 +87,20 @@ html {
 /* Sidebar */
 
 .sidebar {
-  background: var(--dark-bg);
+  background:transparent;
   width: 100%;
   height: 10vh;
   display: none;
   align-items: center;
   justify-content: center;
+}
+
+.sidebar.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: .8em;
 }
 
 .nav-link {
@@ -107,7 +115,7 @@ html {
 }
 
 .sidebar a:hover {
-  color: var(--accent-teal);
+  color: var(--accent-orange);
 }
 
 /* Nav Bar */
@@ -409,17 +417,7 @@ small {
     display: flex;
   }
 
-  .sidebar {
-    display: flex;
-  }
 
-.sidebar.active {
-  display: none;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  font-size: .8em;
-}
 
 .nav-link {
   flex-direction: column;

@@ -91,18 +91,15 @@ img {
 }
 
 .career-compass {
-  box-shadow: 0 0 8px rgba(163, 0, 255, 0.7);
   border: 1px solid var(--accent-violet);
 }
 
 .mentor-me {
-  box-shadow: 0 0 8px var(--accent-teal, 0.7);
   border: 1px solid var(--accent-teal);
 }
 
-.placeholder {
-  box-shadow: 0 0 8px var(--accent-orange, 0.7);
-  border: 1px solid var(--accent-orange);
+.flavagram {
+  border: 2px solid var(--accent-orange);
 }
 
 .movie-description {
@@ -260,14 +257,14 @@ img {
   }
 
   .movie-description li {
-    margin-bottom: 12px;
+    margin-bottom: 2rem;
   }
   .movie-card {
-    max-height: 200px;
+    max-height: 12.5rem;
   }
 
   .movie-card iframe, img {
-    max-height: 200px;
+    max-height: 12.5rem;
   }
 
   .view-code, .visit-site {
