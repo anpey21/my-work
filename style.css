@@ -38,7 +38,7 @@ html {
 
 .toggle-button::before,
 .toggle-button::after,
-.toggle-button input {
+.toggle-button span {
   content:'';
   appearance: none;
   width: var(--bar-width);
@@ -50,26 +50,6 @@ html {
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing),
   translate var(--animation-timing);
-}
-
-.toggle-button:has(input:checked)::before {
-  transform: rotate(45deg);
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / - 2);
-  transition: opacity var(--animation-timing), width var(--animation-timing);
-}
-
-.toggle-button:has(input:checked)::after {
-  transform: rotate(-45deg);
-  width: var(--x-width);
-  translate: 0 calc(var(--bar-height) / 2);
-  transition: opacity var(--animation-timing), width var(--animation-timing);
-}
-
-.toggle-button input:checked {
-  pointer-events: none;
-  opacity: 0;
-  width: 0;
 }
 
 .toggle-button {
@@ -87,19 +67,16 @@ html {
 /* Sidebar */
 
 .sidebar {
-  background:transparent;
+  background:var(--dark-bg);
   width: 100%;
   height: 10vh;
   display: none;
-  align-items: center;
-  justify-content: center;
 }
 
 .sidebar.active {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   font-size: .8em;
 }
 

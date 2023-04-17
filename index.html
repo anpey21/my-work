@@ -5,6 +5,15 @@
       <meta name="title" content="Anna Peysikova | Web Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Anna Peysikova  |  Web Developer</title>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function() {
+              $('.toggle-button').click(function() {
+                $('.sidebar').toggleClass('active');
+                console.log("jQuery is working!");
+              });
+            });
+          </script>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -16,9 +25,9 @@
     <body>
       <div class="hero">
         <nav class="navbar">
-          <label class="toggle-button" for="sidebar-toggle">
-            <input type="checkbox" id="sidebar-toggle">
-          </label>
+          <div class="toggle-button">
+            <span class="checkbox"></span>
+            </div>
           <h1 class="logo">ANNA <span class="logo-span">PEYSIKOVA</span></h1>
           <ul class="menu">
             <li><a href="projects.html">Portfolio</a></li>
@@ -87,6 +96,5 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
