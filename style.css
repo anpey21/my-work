@@ -8,7 +8,7 @@
   body {
     margin: 0 auto;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--primary-font);
   }
 
 html {
@@ -24,7 +24,7 @@ html {
   --accent-teal: #75e9e5;
   --accent-violet: #be26ff;
   --accent-orange: #ffb509;
-  --dark-bg: #111111;
+  --dark-bg: #090909;
   --font-white: whitesmoke;
   --hamburger-margin: 3vh;
   --animation-timing: .2s ease-in-out;
@@ -127,14 +127,15 @@ html {
 h1 {
   color: var(--accent-violet);
   font-size: 2.5rem;
-  font-weight: 300;
-  font-family: var(--secondary-font);
-  letter-spacing: 2px;
+  font-family: var(--primary-font);
+  letter-spacing: 4px;
+  font-weight: lighter;
   padding-left: 12px;
 }
 
 .logo-span {
   color: var(--accent-teal);
+  font-family: var(--primary-font);
 }
 
 .contact-btn {
@@ -179,7 +180,7 @@ color: var(--accent-violet);
 
 .hero-text {
   color: var(--font-white);
-  font-weight: 400;
+  font-weight: lighter;
   font-size: 6em;
   margin-bottom: 5px;
 }
@@ -312,7 +313,7 @@ small {
 
 
 .footer {
-  background-color: #111111;
+  background-color: var(--dark-bg);
   display: flex;
   justify-content: space-between;
   padding: 50px 10px 10px 10px;

@@ -11,12 +11,12 @@ html {
   --accent-violet: #be26ff;
   --accent-yellow: #E4EE89;
   --accent-orange: #ffb509;
-  --dark-bg: #111111;
+  --dark-bg: #060606;
   --font-white: whitesmoke;
 }
 
 body {
-  background-color: #111111;
+  background-color: #060606;
   margin: 0 auto;
   box-sizing: border-box;
   text-decoration: none;
@@ -48,7 +48,7 @@ body {
   color: var(--accent-violet);
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: lighter;
   letter-spacing: 2px;
   margin-top: 15vh;
   padding-bottom: 20vh;
@@ -141,6 +141,7 @@ img {
   font-size: .9em;
   margin-bottom: 5px;
   text-align: left;
+  font-family: var(--secondary-font);
   color: var(--font-white);
   margin-right: 10px;
 }
@@ -272,7 +273,7 @@ img {
   }
 
   .view-code, .visit-site {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
 }
 
