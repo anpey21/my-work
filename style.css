@@ -33,7 +33,6 @@ html {
   --secondary-font: 'Fira Code', monospace;
 }
 
-
 /* Hamburger Toggle */
 
 .toggle-button::before,
@@ -67,9 +66,9 @@ html {
 /* Sidebar */
 
 .sidebar {
-  background:var(--dark-bg);
+  background:transparent;
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   display: none;
 }
 
@@ -156,8 +155,6 @@ h1 {
 color: var(--accent-violet);
 }
 
-
-
 /* Hero Section */
 
 .hero {
@@ -216,10 +213,7 @@ color: var(--accent-violet);
   background: var(--accent-orange);
 }
 
-
-
 /* About Section */
-
 
 .about {
   display: flex;
@@ -230,7 +224,6 @@ color: var(--accent-violet);
   height: 80vh;
   line-height: 2em;
 }
-
 
 .about-content {
   min-width: 50%;
@@ -249,12 +242,9 @@ color: var(--accent-violet);
   color: var(--accent-teal);
 }
 
-
 .about-header-span {
   color: var(--accent-teal);
 }
-
-
 
 /* Skills Section */
 
@@ -307,10 +297,7 @@ small {
   padding-top: 25px;
 }
 
-
-
 /* Footer Section */
-
 
 .footer {
   background-color: var(--dark-bg);
@@ -337,16 +324,8 @@ small {
   color: var(--font-white);
 }
 
-
 /* Media Queries: */
-
-
 @media only screen and (max-width: 425px) {
-  /* .skills-header {
-    font-size: 1.5em;
-    margin-top: 10px;
-  } */
-
   .logo {
     font-size: 7vw;
   }
@@ -373,10 +352,10 @@ small {
 
   }
 
- .about {
-  height: 70vh;
-  width: 100%;
- }
+  .about {
+    height: 70vh;
+    width: 100%;
+  }
 
   .icon-col {
     flex-basis: 50%;
@@ -389,19 +368,15 @@ small {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .toggle-button {
     display: flex;
   }
 
-
-
-.nav-link {
-  flex-direction: column;
-  text-align: center;
-}
-
+  .nav-link {
+    flex-direction: column;
+    text-align: center;
+  }
 
   .navbar {
     flex-direction: column;
@@ -436,9 +411,9 @@ small {
     font-size: 1.5em;
   }
 
-.about {
-  height: 100vh;
-}
+  .about {
+    height: 100vh;
+  }
 
   .about-content {
     font-size: 2.5vw;
@@ -450,17 +425,17 @@ small {
 
   .hero-text {
     font-size: 3em;
-
   }
 
   .hero-content {
     align-items: center;
   }
+  
   .hero-content h3 {
     font-size: 1.2em;
   }
 
-    .icon-col {
+  .icon-col {
     flex-basis: 50%;
     text-align: center;
     padding: 10px;
